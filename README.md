@@ -1,84 +1,84 @@
 # Privacy Policy for Alarm Loud
 
-**Last updated: June 18, 2026**
+**Last updated: October 25, 2026**
 
 ## Overview
 
-Alarm Loud is a native iOS alarm clock application that helps you wake up with mission-based challenges. **We do not collect, transmit, or share any of your personal data.** Your privacy is built into the app by design.
+Alarm Loud is an iOS alarm clock that wakes you with mission-based challenges. It has no accounts, no ads, and no tracking. Your alarms, missions, and sleep records stay on your device. The only data that leaves your device is what's needed to process and verify in-app purchases, described below.
 
-## Data Collection
+## What We Collect
 
-Alarm Loud **does not collect any data**. The app:
+Alarm Loud itself does not collect personal data, and we (the developer) do not run any servers that receive your data. The app:
 - Has **no analytics** or crash reporting SDKs
 - Has **no advertising** or ad networks
-- Has **no third-party SDKs** of any kind
 - Does **not create an account** or require registration
-- Does **not make any network requests**
 - Does **not track you** across other apps or websites
+
+## In-App Purchases (Apple and RevenueCat)
+
+Subscriptions are sold through Apple's App Store. Apple processes payment; we never see your payment details.
+
+To check whether you have an active subscription, the app uses **RevenueCat**, a subscription management service. RevenueCat receives:
+- An **anonymous app user ID** generated on your device (not linked to your name, email, or Apple ID)
+- Your **purchase and subscription history** for Alarm Loud (from Apple)
+- Basic **device and app information** needed to validate purchases, such as app version, iOS version, locale, and IP address
+- Which screen a subscription offer was shown from (for example, onboarding or settings), used to understand which offers work
+
+This data is used only to unlock premium features and to measure subscription performance. It is not used for advertising and is not sold. See RevenueCat's privacy policy: https://www.revenuecat.com/privacy
 
 ## Permissions
 
-Alarm Loud requests certain permissions only to deliver its core alarm and mission functionality:
+Alarm Loud asks for permissions only for its alarm and mission features:
 
 | Permission | Purpose |
 |---|---|
-| **Notifications** | Delivering alarm alerts, snooze reminders, bedtime reminders, and wake-up check notifications |
-| **Camera** | Used only when you create or complete a Photo, QR code, or Barcode wake-up mission |
-| **Motion & Fitness** | Used only on-device while you complete Shake, Step, or Squat wake-up missions |
-| **Background Audio** | Allows alarm sounds and sleep sounds to play when the app is in the background or device is locked |
+| **Alarms** (iOS 26.1 and later) | Ringing your alarms through Silent mode and Focus until you get up |
+| **Notifications** | Alarm alerts on earlier iOS versions, wake-up checks, and bedtime reminders |
+| **Camera** | Only when you create or complete a Photo, QR code, or Barcode wake-up mission |
+| **Motion & Fitness** | Only on-device while you complete a Shake, Step, or Squat wake-up mission |
+| **Background Audio** | Playing alarm and sleep sounds while the app is in the background or the device is locked |
 
-All permissions are requested only when the relevant feature is first used. You can grant or revoke any permission at any time in your device's Settings.
+You can grant or revoke any permission at any time in iOS Settings.
 
-## Local Data Storage
+## Data Stored on Your Device
 
-All data created by Alarm Loud is stored **exclusively on your device** using Apple's SwiftData framework (on-device SQLite). This includes:
+These are stored **only on your device** (Apple's SwiftData, on-device storage):
 
-- Alarm configurations (times, repeat days, labels, sounds, assigned missions)
-- Mission configurations (math difficulty, photo reference images, QR/barcode values, step/shake targets)
-- Sleep tracking records (bedtime, wake time, duration, quality rating)
-- Alarm dismissal history (wake scores, dismiss durations, snooze counts)
-- App preferences (theme, default snooze duration, dark mode)
-- Bedtime reminder settings
+- Alarm settings (times, repeat days, labels, sounds, missions)
+- Mission settings (math difficulty, photo reference images, QR/barcode values, step/shake/squat targets)
+- Sleep records (bedtime, wake time, duration)
+- Alarm history (snooze counts, completed missions)
+- App preferences (default snooze duration, bedtime reminder settings)
 
-**All of this data stays on your device.** It is never sent to us or anyone else.
+This data is never sent to us or to RevenueCat. It is included in your device backups (iCloud or computer) like other app data, under Apple's backup protections.
 
 ## Photo Mission Privacy
 
-When you use the Photo mission feature:
-- The reference photo you register and photos taken during alarm dismissal are processed **entirely on-device** using Apple's Vision framework (`VNFeaturePrint`).
-- Photos are **never uploaded** or transmitted anywhere.
-- Reference photos are stored locally in your app's SwiftData database as external binary data.
+- Reference photos and photos taken to dismiss an alarm are compared **entirely on-device** using Apple's Vision framework.
+- Photos are **never uploaded** or transmitted.
+- Reference photos are stored locally with the alarm.
 
 ## Motion Data Privacy
 
 Motion data (accelerometer readings, step counts) is:
-- Accessed **only while you are actively completing** a Shake, Step, or Squat mission
+- Accessed **only while you are completing** a Shake, Step, or Squat mission
 - Processed **entirely on-device**
-- **Never recorded, stored, or transmitted**
+- **Never stored or transmitted**
 
 ## Data Deletion
 
-You can delete all locally stored data at any time by going to:
+To delete all data stored on your device, open the app and go to **Settings (gear icon on the Alarms screen) → Delete All Local Data**. This removes alarms, missions and reference photos, alarm history, sleep records, the active sleep session, and reminders. Deleting the app also removes all of it.
 
-**Settings → Privacy & Data → Delete All Local Data**
-
-This removes all alarms, alarm history, sleep records, active sleep sessions, and reminders from your device.
+Purchase records are kept by Apple and RevenueCat as needed to provide your subscription. To ask for RevenueCat data linked to your anonymous ID to be deleted, contact us at the address below.
 
 ## Children's Privacy
 
-Alarm Loud does not collect any personal information from anyone, including children under 13. All data remains on the user's device.
+Alarm Loud is not directed at children under 13 and does not knowingly collect personal information from them.
 
 ## Changes to This Policy
 
-If this privacy policy changes, the "Last updated" date at the top will be revised. Since the app does not collect data, changes will only reflect operational or regulatory clarifications.
+If this policy changes, the "Last updated" date above will be revised.
 
 ## Contact
-E-mail: ktnapps@gmail.com
 
-## Third-Party Services
-
-Alarm Loud uses **no third-party services**.
-
-## Your Rights
-
-Because we collect no data, there is nothing to access, correct, delete, or port from our servers. All your data is on your device and fully under your control.
+Questions about this policy: **ktnapps@gmail.com**
